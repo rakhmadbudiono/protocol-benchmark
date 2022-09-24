@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option go_package = "servers/model";
+
+service HelloWorld {
+    rpc GetPackage (Void) returns (Package);
+}
+
+message Package {
+    string message = 1;
+}
+
+message Void {}
